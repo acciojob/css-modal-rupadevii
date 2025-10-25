@@ -1,1 +1,51 @@
 /*  your css code here. If applicable */
+.openModal{
+	background-color: inherit;
+}
+.modal{
+	display: none;
+	animation : moveDown 0.7s ease forwards;
+}
+
+.modal-content{
+	padding: 12px;
+	background-color: white;
+}
+
+.modal-header{
+	background-color: green;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.modal-header h2{
+	margin : 0;
+}
+
+.close-modal{
+	border: none;
+	background-color: green;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.modal-body{
+	padding: 20px;
+}
+
+.modal-body p{
+	margin: 0;
+}
+
+@keyframes moveDown {
+	from{
+		transform: translateY(0px);
+	}
+	to{
+		transform: translateY(200px)
+	}
+}
