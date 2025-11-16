@@ -13,6 +13,8 @@ window.addEventListener("click", hideModal)
 
 closeModal.addEventListener("click", hideModal) 
 
+modal.addEventListener("click", (e) => e.stopPropagation())
+
 function hideModal(){
 	modal.style.display = "none";
 	document.body.style.backgroundColor = "white"
